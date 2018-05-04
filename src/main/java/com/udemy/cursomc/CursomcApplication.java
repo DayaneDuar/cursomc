@@ -30,7 +30,7 @@ import com.udemy.cursomc.repositories.ItemPedidoRepository;
 import com.udemy.cursomc.repositories.PagamentoRepository;
 import com.udemy.cursomc.repositories.PedidoRepository;
 import com.udemy.cursomc.repositories.ProdutoRepository;
-
+ 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
 	
@@ -130,7 +130,6 @@ public class CursomcApplication implements CommandLineRunner {
 		p3.getItens().addAll(Arrays.asList(ip2));
 		
 		itemPedidoRepository.saveAll(Arrays.asList(ip1, ip2, ip3));
-		
 		
 	}
 }
